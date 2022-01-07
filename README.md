@@ -50,26 +50,27 @@ Our best predictive model had an R-squared of 0.986 which is a big improvement o
 
 ![Summary](./images/overview.png)
 
-Our final model was predictive model was....
 
 Our inferential model had R-squared of 0.725 and a RMSE of $178957. This error was a big improvement over the baseline's model error of $256860.  
 
 ![error](./images/error_overview.png)
 
-Residuals 
+Plotting the residuals with our predictive model against our test data. We saw that it explained 72.5% of the variance. We also noticed that there was much larger variance with the more expensive homes. This is usable for our business situation since the client is interested in buying cheaper homes which our model seems to be better at predicting.
 
-![OLS Summary](./images/variance.png)
+![variance](./images/variance.png)
 
-Important features to pay attention too
+We examined our model coefficients to see which ones played a larger role in affecting price. This means that for this model, if everything else is held constant, if we were to increase sqft_living by one unit, the housing price would increase by $284.76.
 
+![coefficient](./images/variance.png)
 
-![coefficient](./images/coefficient.png)
+We normalized the coefficients affecting house price to get a better idea of how each feature is impacting house price. Before normalizing our data, we see that sqft_living had one of the smaller coefficients. However, after normalizing the features, it shows that sqft_living has relatively one of the biggest impact on house prices. We believe that these are key housing features that we should pay attention to for prediction house prices.
 
-Our best predictive model
+![normalized_coefficient](./images/coefficient.png)
+
+Our best predictive model invovled many transformations with the addition of engineered features that can be found in our notebook. 
 
 ![last_model](./images/last_model.png)
 
-This means if everything is held constant.....
 
 
 ## Conclusions
