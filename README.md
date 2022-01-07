@@ -31,30 +31,43 @@ We used an iterative model approach where we made alterations in a multi step pr
 
 We built and compared the following models and made the following step-wise alterations to them:
 1) Baseline model with one feature variable
-2) Model with all features
-3) Data cleaning and removing outliers
-4) Addressing multicolinearity
-5) Feature engineering
-6) Narrowing down the features to ones that have a substantial correlation coefficient. 
-7) Log transformation to address assumptions
+2) Model with no categorical values
+3) Model pre-cleaned
+4) Model after cleaning 
+5) Model addressing colinearity
+6) Model excluding outliers
+7) Model with engineered features
+8) Engineered more features (Our Inferential model)
+9) Log transformations
+10) Normalizations (Our best predictive model)
 
 
 ***
 
 ## Results
 
-* When comparing our baseline model we see.... with improvements in....
-Our best R squared value was.... and RMS was...
+Our best predictive model had an R-squared of 0.986 which is a big improvement of our baseline model's R-squared of 0.492.
 
-![graph1](./images/image_1.png)
+![Summary](./images/overview.png)
 
 Our final model was predictive model was....
 
-![OLS Summary](./images/image_2.png)
+Our inferential model had R-squared of 0.725 and a RMSE of $178957. This error was a big improvement over the baseline's model error of $256860.  
 
-Our final iterative model was...
+![error](./images/error_overview.png)
 
-![OLS Summary](./images/image_2.png)
+Residuals 
+
+![OLS Summary](./images/variance.png)
+
+Important features to pay attention too
+
+
+![coefficient](./images/coefficient.png)
+
+Our best predictive model
+
+![last_model](./images/last_model.png)
 
 This means if everything is held constant.....
 
@@ -65,14 +78,14 @@ Given all the information we gathered and visualized, our Key recommendations ar
 
 - **Use our model to help predict house prices.**
 - **Waterfront and View has a large impact on prices. If Zillow is interested in buying many homes, avoid homes with these features.** 
-- **Homes closer to Seattle and Redmond more expenisve. If Zillow is interested in just buying many homes, look around Kent for cheaper homes.**
+- **Homes closer to Seattle and Redmond more expenisve. If Zillow is interested in buying many homes, look around Kent for cheaper homes.**
 - **Examine the houses and see what home buyers value to add to the model, such as fireplaces.**
 
 ***
 
 ## For More Information
 
-Please review our full analysis in [our Jupyter Notebook](./dsc-phase2-project.ipynb) or our [presentation](./dsc-phase2-presentation.pdf).
+Please review our full analysis in [our Jupyter Notebook](./Master.ipynb) or our [presentation](./Presentation.pdf).
 
 For any additional questions, please contact<br />
 **Hoang Nguyen: hvnguyen90@gmail.com**<br />
@@ -84,8 +97,8 @@ For any additional questions, please contact<br />
 
 ```
 ├── README.md                           
-├── dsc-phase2-project-template.ipynb   
-├── DS_Project_Presentation.pdf         
+├── Master.ipynb   
+├── Presentation.pdf         
 ├── data                                
 └── images                              
 ```
