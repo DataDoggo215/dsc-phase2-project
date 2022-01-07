@@ -55,13 +55,13 @@ Our inferential model had R-squared of 0.725 and a RMSE of $178957. This error w
 
 ![error](./images/error_overview.png)
 
-Plotting the residuals with our predictive model against our test data. We saw that it explained 72.5% of the variance. We also noticed that there was much larger variance with the more expensive homes. This is usable for our business situation since the client is interested in buying cheaper homes which our model seems to be better at predicting.
+Plotting the residuals with our predictive model against our test data, we saw that it explained 72.5% of the variance. We also noticed that there was much larger variance with the more expensive homes. This is usable for our business situation since the client is interested in buying cheaper homes which our model seems to be better at predicting.
 
 ![variance](./images/variance.png)
 
 We examined our model coefficients to see which ones played a larger role in affecting price. This means that for this model, if everything else is held constant, if we were to increase sqft_living by one unit, the housing price would increase by $284.76.
 
-![coefficient](./images/variance.png)
+![coefficient](./images/coefficient_1.png)
 
 We normalized the coefficients affecting house price to get a better idea of how each feature is impacting house price. Before normalizing our data, we see that sqft_living had one of the smaller coefficients. However, after normalizing the features, it shows that sqft_living has relatively one of the biggest impact on house prices. We believe that these are key housing features that we should pay attention to for prediction house prices.
 
@@ -79,6 +79,7 @@ Given all the information we gathered and visualized, our Key recommendations ar
 
 - **Use our model to help predict house prices.**
 - **Waterfront and View has a large impact on prices. If Zillow is interested in buying many homes, avoid homes with these features.** 
+- **If Zillow is interested in buying many homes, avoid buying bigger homes.** 
 - **Homes closer to Seattle and Redmond more expenisve. If Zillow is interested in buying many homes, look around Kent for cheaper homes.**
 - **Examine the houses and see what home buyers value to add to the model, such as fireplaces.**
 
